@@ -25,6 +25,7 @@ from engagement.engagement_exception import EngagementException
 from engagement.test_engager import TestEngager
 from engagement.system_engager import SystemEngager
 from engagement.fullcontact_engager import FullContactEngager
+from engagement.clearbit_engager import ClearbitEngager
 from engagement.pipl_engager import PiplEngager
 from engagement.crunchbase_engager import CrunchBaseEngager
 from engagement.crunchbasebot_engager import CrunchBaseBotEngager
@@ -262,6 +263,7 @@ class EnrichmentService:
         # Set up providers
         self.registered_providers = {}
         self.registered_providers["FullContact"] = FullContactEngager()
+        self.registered_providers["Clearbit"] = ClearbitEngager()
         self.registered_providers["Pipl"] = PiplEngager()
         self.registered_providers["System"] = SystemEngager()
         self.registered_providers["Test"] = TestEngager()

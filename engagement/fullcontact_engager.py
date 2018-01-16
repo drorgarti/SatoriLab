@@ -57,18 +57,18 @@ class FullContactEngager(Engager):
         contact_info = result_obj.get('contactInfo', None)
         if contact_info:
             if 'givenName' in contact_info:
-                self.set_data("first_name", contact_info['givenName'])
+                self.set_data(P.FIRST_NAME, contact_info['givenName'])
             if 'familyName' in contact_info:
-                self.set_data("last_name", contact_info['familyName'])
+                self.set_data(P.LAST_NAME, contact_info['familyName'])
 
         demographics = result_obj.get('demographics', None)
         if demographics:
             gender = demographics.get('gender', None)
             if gender:
-                self.add_data("gender", gender.lower())
+                self.add_data(P.GENDER, gender.lower())
             loc = demographics.get('locationGeneral', None)
             if loc:
-                self.add_data("location", loc)
+                self.add_data(P.LOCATIONS, loc)
 
         photos = result_obj.get('photos', None)
         if photos:
