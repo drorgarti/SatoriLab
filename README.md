@@ -8,7 +8,9 @@ Still need to write some "Getting Started" lines
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+1) Install MongoDB
+2) Install Neo4J
+
 
 ```
 Give examples
@@ -72,7 +74,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Dror Garti** - *Initial work*
+* **Dror Garti** - *Lab maintenance*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
